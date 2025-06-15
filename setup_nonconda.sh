@@ -18,7 +18,7 @@ sudo apt install -y cuda-toolkit-11-8
 # Cài phụ thuộc
 pip install -U openmim
 mim install mmengine
-pip install -U setuptools wheel ninja
+pip install -U setuptools==60.2 wheel ninja
 sudo apt install -y build-essential
 
 # Clone và cài MMCV
