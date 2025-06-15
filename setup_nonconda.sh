@@ -60,7 +60,6 @@ python -c "import spconv; print('✅ spconv version:', spconv.__version__)"
 # Cài MinkowskiEngine
 apt install -y libopenblas-dev
 export CPLUS_INCLUDE_PATH=/usr/include
-pip install "setuptools<60"
 export MAX_JOBS=1
 
 pip install --no-build-isolation -U git+https://github.com/NVIDIA/MinkowskiEngine -v --no-deps \
