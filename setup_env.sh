@@ -45,6 +45,10 @@ pip install git+https://github.com/open-mmlab/mmsegmentation.git
 echo 'export LD_LIBRARY_PATH=/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:$LD_LIBRARY_PATH' >> ~/.bashrc
 source ~/.bashrc
 
+# Kích hoạt môi trường (phải dùng conda.sh)
+source "$(conda info --base)/etc/profile.d/conda.sh"
+conda activate ai
+
 # Cài MMDetection3D
 git clone https://github.com/open-mmlab/mmdetection3d.git
 cd mmdetection3d
