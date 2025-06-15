@@ -12,14 +12,14 @@ pip install --upgrade pip
 pip install torch==2.0.1+cu118 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Cài CUDA toolkit (bằng apt hoặc skip nếu đã có sẵn)
-sudo apt update
-sudo apt install -y cuda-toolkit-11-8
+apt update
+apt install -y cuda-toolkit-11-8
 
 # Cài phụ thuộc
 pip install -U openmim
 mim install mmengine
 pip install -U setuptools==60.2 wheel ninja
-sudo apt install -y build-essential
+apt install -y build-essential
 
 # Clone và cài MMCV
 git clone https://github.com/open-mmlab/mmcv.git
@@ -58,7 +58,7 @@ pip install spconv-cu118
 python -c "import spconv; print('✅ spconv version:', spconv.__version__)"
 
 # Cài MinkowskiEngine
-sudo apt install -y libopenblas-dev
+apt install -y libopenblas-dev
 export CPLUS_INCLUDE_PATH=/usr/include
 pip install "setuptools<60"
 export MAX_JOBS=1
