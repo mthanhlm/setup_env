@@ -69,7 +69,7 @@ pip install spconv-cu118
 python -c "import spconv; print('✅ spconv version:', spconv.__version__)"
 
 # Cài MinkowskiEngine
-conda install openblas-devel -c anaconda
+conda install -y openblas-devel -c anaconda
 export CPLUS_INCLUDE_PATH=${CONDA_PREFIX}/include
 pip install "setuptools<60"
 export MAX_JOBS=1
