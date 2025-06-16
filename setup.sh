@@ -26,9 +26,9 @@ conda install -c "nvidia/label/cuda-11.8.0" cuda-toolkit -y
 # Cài phụ thuộc
 pip install -U openmim
 mim install mmengine
-pip install -U setuptools wheel ninja
-sudo apt update
-sudo apt install -y build-essential
+pip install -U setuptools==60.2 wheel ninja
+apt update
+apt install -y build-essential
 
 # Clone và cài MMCV
 git clone https://github.com/open-mmlab/mmcv.git
