@@ -22,6 +22,7 @@ mim install mmengine
 pip install -U setuptools==60.2 wheel ninja
 apt update
 apt install -y build-essential
+apt-get install git
 
 # Clone và cài MMCV
 git clone https://github.com/open-mmlab/mmcv.git
